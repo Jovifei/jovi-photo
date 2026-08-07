@@ -5,7 +5,7 @@
 
 **`jovi-photo`** 是一套专门面向 AI 编码助手（Google Antigravity、Claude Agentic IDE）与图像生成引擎打造的**摄影艺术转化 Skill 套件**。
 
-仓库根目录**直接托管 5 个独立重构与创新的 `jv-` 前缀核心 Skill 文件夹**与**真实转换对比示例图库**，打开即用，直观清爽！
+仓库根目录**直接托管 5 个独立重构与创新的 `jv-` 前缀核心 Skill 文件夹**与**裁剪裁切后的干净艺术转换对比图库**，打开即用，直观清爽！
 
 ---
 
@@ -14,7 +14,7 @@
 ```text
 jovi-photo/
 ├── assets/
-│   └── examples/                       # 真实转换效果对比示例图库
+│   └── examples/                       # 干净裁切的艺术效果对比图库（无手机边框）
 │       ├── torn-world-portal.png
 │       ├── scene-essence-minimal.png
 │       ├── photo-specimen-journal.png
@@ -27,21 +27,6 @@ jovi-photo/
 ├── jv-torn-world-portal-v1-0/           # 5. 现实撕裂传送门
 └── README.md                               # 统一套件说明与使用指南
 ```
-
----
-
-## 🔗 借鉴与学习的 4 个基准 Skill
-
-在开发 **`jv-`** 系列 Skill 时，我们深度学习并借鉴了开源社区中 4 个优秀 Skill 的色彩逻辑、留白率与排版架构。借鉴的基准 Skill 不存放在本仓库代码中，其开源参考如下：
-
-1. **`gc-minimal-zine-poster-v0-1`** (日韩极简 Zine 海报)
-   - *借鉴点*：四段式 Standard Prompt 编译器架构、大面积米白纸面留白 (70%+ 空置率)、高饱和度色彩锚点约束。
-2. **`photo-abstract-editorial`** (摄影与抽象双联画报)
-   - *借鉴点*：上下/左右双联画报版式、真实摄影与抽象几何色块对齐解构。
-3. **`scene-distillation-zine-v1-3`** (场景纯插画提炼)
-   - *借鉴点*：将繁复树叶、建筑纹理、人群压缩为少数安静大面积形体的提炼法则。
-4. **`scenes-gathered-zine-v1-3`** (拾景纸刊·手撕拼贴)
-   - *借鉴点*：真实照片手撕纸边缘（手撕白色纤维拉丝）与手记排版系统。
 
 ---
 
@@ -155,6 +140,21 @@ git clone https://github.com/Jovifei/jovi-photo.git
 ```
 
 仓库根目录下的 5 个 `jv-` 文件夹将被 Agent 自动识别并激活使用！
+
+---
+
+## 🔗 借鉴与学习的 4 个基准 Skill (参考来源)
+
+在开发 **`jv-`** 系列 Skill 时，我们深度学习并借鉴了开源社区中以下 4 个优秀 Skill 的色彩逻辑、留白率与排版架构（借鉴的代码不保存在本仓库，尊重原作者开源成果）：
+
+1. **`gc-minimal-zine-poster-v0-1`** (日韩极简 Zine 海报)
+   - *借鉴点*：四段式 Standard Prompt 编译器架构、大面积米白纸面留白 (70%+ 空置率)、高饱和度色彩锚点约束。
+2. **`photo-abstract-editorial`** (摄影与抽象双联画报)
+   - *借鉴点*：上下/左右双联画报版式、真实摄影与抽象几何色块对齐解构。
+3. **`scene-distillation-zine-v1-3`** (场景纯插画提炼)
+   - *借鉴点*：将繁复树叶、建筑纹理、人群压缩为少数安静大面积形体的提炼法则。
+4. **`scenes-gathered-zine-v1-3`** (拾景纸刊·手撕拼贴)
+   - *借鉴点*：真实照片手撕纸边缘（手撕白色纤维拉丝）与手记排版系统。
 
 ---
 
