@@ -1,22 +1,20 @@
 ---
 name: jv-photo-specimen-journal-v1-0
 description: >-
-  Transform a user-supplied photo into a vertical diptych where the original
-  photograph sits on top and a photo-fragment field-notes specimen collage sits
-  below on warm aged ivory paper. Unlike illustration-based skills, the lower panel
-  uses actual photographic fragments, torn photo strips, or silhouette subject cutouts
-  directly from the original image with raw hand-torn fibrous paper edges. Features
-  subtle field-notes annotations: dotted trajectory lines marked with compass directions
-  (N, S, E, W), vertical survey measurement scale lines with tick marks, small yellow
-  accent blocks (■), small secondary photo disk cutouts, a concise poetic English
-  title, a Chinese sub-caption with serial numbering, and micro archival coordinates.
-  Use when the user supplies a travel, landscape, or portrait photo and wants a tactile
-  journal/specimen collage that feels like a quiet field-notes memory page.
+  Transform a user-supplied photo into a single standalone photo-fragment field-notes
+  specimen collage poster on warm aged ivory paper. Uses actual photographic fragments,
+  torn photo strips, or silhouette subject cutouts directly from the original image with
+  raw hand-torn fibrous paper edges. Features subtle field-notes annotations: dotted
+  trajectory lines marked with compass directions (N, S, E, W), vertical survey measurement
+  scale lines with tick marks, small yellow accent blocks (■), small secondary photo disk
+  cutouts, a concise poetic English title, a Chinese sub-caption with serial numbering, and
+  micro archival coordinates. Outputs a single independent artwork without combining the
+  source photo.
 ---
 
 # 摄影标本日志 · Photo Specimen Journal v1.0
 
-将用户提供的照片转化为**垂直双联图**：上方为原始照片，下方为由**原图照片撕纸碎片**组装而成的**标本日志页**。
+将用户提供的照片转化为**一张单独的标本日志艺术海报**。
 
 核心信条：**不使用手绘或插画，直接将摄影拆解为纸质碎片与轮廓剪影，辅以手记线条、测量刻度与地理坐标，重构旅行者的视觉标本。**
 
@@ -28,8 +26,7 @@ Return the generated image plus one brief creative rationale by default.
 
 本风格的独特性在于：**完全拒绝手绘插画**，使用真实的**照片撕纸碎片**（Photo Fragments）和**主体轮廓剪切**（Silhouette Cutouts）进行空间重排与标本化归档。
 
-1. **上半部分（原始照片）**：完整保留用户原图；
-2. **下半部分（标本日志页）**：在暖米白/象牙色纸面中央，将原图拆解为1~3块带有**真实手撕毛边**的照片碎片或主体轮廓剪影，并配以极其精致的**田野手记标注线条**（虚线轨迹、测量刻度尺、方位节点、小黄色色彩标贴、诗意英文、中文小标题、序列号/坐标）。
+在暖米白/象牙色纸面中央，将原图拆解为1~3块带有**真实手撕毛边**的照片碎片或主体轮廓剪影，并配以极其精致的**田野手记标注线条**（虚线轨迹、测量刻度尺、方位节点、小黄色色彩标贴、诗意英文、中文小标题、序列号/坐标）。单图呈现为独立的撕纸拼贴画报。
 
 ---
 

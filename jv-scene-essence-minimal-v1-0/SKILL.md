@@ -1,22 +1,19 @@
 ---
 name: jv-scene-essence-minimal-v1-0
 description: >-
-  Transform a user-supplied photo into a minimal geometric essence illustration
-  paired with the source image, presented as either a vertical diptych (photo on
-  top, illustration below) or a horizontal side-by-side diptych (photo on left,
-  illustration on right). The illustration extracts only the 1-3 core subjects,
-  reduces them to simplified flat geometric shapes, fine structural lines, loose
-  watercolor washes, or radial perspective geometry depending on material. It
-  removes all background and secondary elements, floats extracted forms on warm
-  ivory paper, preserves perspective/radial/axial spatial structure from the
-  original photo, adds one accent color anchor, includes a poetic English title
-  with italic subtitle. Use when the user supplies any photo and wants a clean,
-  editorial-style minimal geometric illustration paired with the source image.
+  Transform a user-supplied photo into a single standalone minimal geometric essence
+  illustration poster on warm ivory paper. The illustration extracts only the 1-3 core
+  subjects, reduces them to simplified flat geometric shapes, fine structural lines,
+  loose watercolor washes, or radial perspective geometry depending on material. It
+  removes all background and secondary elements, floats extracted forms on warm ivory
+  paper, preserves perspective/radial/axial spatial structure from the original photo,
+  adds one accent color anchor, and includes a poetic English title with italic subtitle.
+  Outputs a single independent artwork without combining the source photo.
 ---
 
 # 摄影极简精粹 · Scene Essence Minimal v1.0
 
-将用户提供的照片转化为**双联图**（上下或左右）：原始照片 + 同一场景的**极简几何精粹插图**。
+将用户提供的照片转化为**一张单独的极简几何精粹插图海报**。
 
 核心信条：**从繁复现实中提取最少的形与色，保留空间结构的骨架，让本质浮现在空白之上。**
 
@@ -26,10 +23,7 @@ Return the generated image plus one brief creative rationale by default.
 
 ## 核心视觉逻辑
 
-1. **原始照片**：完整保留用户提供的照片，不做任何修改；
-2. **极简精粹图**：在温暖的米白/象牙色纸面上，保留1~3个核心形体 + 空间结构骨架，配以诗意英文标题。
-
-两部分等宽/等高，构成原图与本质之间的视觉对话。
+在温暖的米白/象牙色纸面上，保留原图的1~3个核心形体 + 空间结构骨架，配以单色彩锚点和诗意英文标题。画面超过50%为干净留白。独立呈现为单张艺术海报（不与原图拼贴）。
 
 ---
 
@@ -54,16 +48,9 @@ Return the generated image plus one brief creative rationale by default.
 
 ---
 
-## Step 0：确定双联版式
+## Step 0：构图与画布比例
 
-根据原图的长宽比和构图方向，选择双联版式：
-
-| 原图特征 | 推荐版式 |
-|---------|---------|
-| 竖向构图（建筑仰视、塔楼、人像） | **左右并排**：原图在左，极简图在右 |
-| 横向构图（天际线、风景、海岸） | **上下叠加**：原图在上，极简图在下 |
-| 俯视/鸟瞰构图 | **上下叠加**：原图在上，极简图在下 |
-| 用户明确指定版式 | 遵从用户指定 |
+画面统一输出为**单张独立的艺术作品海报**（单图比例 3:4 或 1:1），绝不与原始照片拼贴或形成双联图。形体居中或优雅悬浮于暖米白纸面中央。
 
 ---
 
