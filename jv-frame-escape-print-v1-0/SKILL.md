@@ -40,8 +40,9 @@ Return the generated image plus one brief creative rationale by default.
 2. **提取背景色**：从原图主色调提取1个单一色彩，平涂为背景。
 3. **确定相框位置**：相框偏向一侧，让破框元素有足够的"出框空间"。
 4. **确定破框方向**：顺应破框主体的自然延伸方向，不强行改变。
-5. **保持照片真实质感**：相框内外的照片部分均保持完整的摄影质感，不做插画或简化。
-6. **添加相机品牌标注**：底部白色框内印有相机型号文字。
+5. **【核心约束】必须使用用户原图作为 ImagePaths 参考**：生成时必须将用户上传的照片作为图像参考传入，确保相框内部呈现的是用户的真实照片内容，而不是 AI 凭空重新生成的场景。
+6. **保持照片真实质感**：相框内外的照片部分均保持完整的摄影质感，不做插画或简化。
+7. **添加相机品牌标注**：底部白色框内印有相机型号文字。
 
 ---
 
@@ -146,23 +147,24 @@ Return the generated image plus one brief creative rationale by default.
 
 ## Step 5：提示词编译规范
 
-编译为四段英文提示词：
+编译为四段英文提示词，**必须以用户上传的原图作为 ImagePaths 图像参考输入**：
 
 **段落1 - 画布与背景**：
-整体画布描述，单一平涂背景色（具体色值），无纹理无渐变，垂直或正方形画幅。
+整体画布描述，单一平涂背景色（具体色值），无纹理无渐变，垂直或正方形画幅。强调这是基于参考图像生成。
 
 **段落2 - 相片冲印边框**：
-白色厚边相框位置（偏右/偏下/居中偏移方向），底部宽白边含相机型号文字，边框尺寸比例，框内保留原图真实摄影质感。
+白色厚边相框位置（偏右/偏下/居中偏移方向），底部宽白边含相机型号文字，边框尺寸比例。
+**关键**：框内内容为「用户提供的参考照片的精确复制（exact reproduction of the reference photo）」——不得重新描述场景，不得凭空生成场景，必须使用参考图像的真实内容。
 
 **段落3 - 破框主体**：
-破框主体的精确描述（元素类型、延伸方向、溢出深度），强调与框内无缝连续，保持真实照片质感。
+破框主体的精确描述（元素类型、延伸方向、溢出深度），强调破框的枝条/元素从参考照片的相应位置延伸出框，与框内无缝连续，保持真实照片质感。
 
 **段落4 - 质感与约束**：
-照片质感要求（真实摄影，无插画化），明确禁止事项（禁止撕纸毛边/禁止插画简化/禁止多个破框元素）。
+要求 AI 高度忠实于参考图像内容（high fidelity to reference image, exact scene reproduction），真实摄影质感，明确禁止：重新创作场景内容、撕纸毛边、插画化简化、多个破框元素。
 
 ---
 
-## Step 6：生成工作流
+## Step 6：生成工作流（⚠️ 必须带参考图）
 
 1. 仔细观察用户提供的照片；
 2. 建立破框分析：识别最具延伸感的破框主体 + 其自然延伸方向；
@@ -170,9 +172,14 @@ Return the generated image plus one brief creative rationale by default.
 4. 确定相框在画布上的偏移位置（让破框方向有空间）；
 5. 确定破框深度（溢出边框的量）；
 6. 推断或从原图读取相机品牌型号文字；
-7. 编译四段英文提示词；
-8. 以用户照片为参考生成；
+7. 编译四段英文提示词（段落2必须强调 exact reproduction of reference photo）；
+8. **调用 generate_image 时，必须将用户上传的原图路径传入 ImagePaths 参数**，确保 AI 使用真实照片作为参考，而非重新生成；
 9. 返回生成图像和中文创作思路。
+
+### ⚠️ 防止假场景的关键提示词句式（必须包含）
+```
+The photo INSIDE the frame must be an exact, faithful reproduction of the provided reference photo — do NOT invent new scenes, do NOT hallucinate different content. Use the reference image as the ground truth for the frame interior.
+```
 
 ---
 
