@@ -432,7 +432,7 @@ Before returning, verify:
 - Is the chromatic hue, source shape, integration mode, and position justified?
 - Is there only one added hue?
 - Does the chromatic structure satisfy at least two integration tests?
-- Would removing the added hue weaken balance, movement, figure–ground, continuity, or meaning?
+- Would removing the added hue weak balance, movement, figure–ground, continuity, or meaning?
 - Is the color structurally useful without becoming a detached sticker or dominant advertising device at thumbnail size?
 - Does the micro-text use supplied wording exactly, or stay within the Chinese/English length limit when authored?
 - Is the text English-only by default, with Chinese-only or bilingual used only when the user supplied or requested it?

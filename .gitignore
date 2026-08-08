@@ -1,0 +1,8 @@
+﻿# Ignore non-jv skills
+.claude/skills/gc-minimal-zine-poster-v0-1/
+.claude/skills/photo-abstract-editorial/
+.claude/skills/scene-distillation-zine-v1-3/
+.claude/skills/scenes-gathered-zine-v1-3/
+
+# Ignore workbuddy logs and cache
+.workbuddy/
