@@ -1,17 +1,33 @@
 ---
-name: jv-scene-essence-minimal-v1-1
-description: Transform a user-supplied photo into a single standalone minimal geometric essence illustration poster on warm ivory paper. Inherits from gc-minimal-zine-poster-v0-1 prompt compiler architecture and scene-distillation-zine-v1-3 analysis. Extracts 1-3 core subjects from the source photo via a Scene Distillation Card, reduces them to simplified flat geometric shapes, fine structural lines, or flat silhouettes (never photographic pixels), floats them on warm paper with 70-90% negative space, adds one clear high-chroma color anchor, and includes poetic title/subtitle typography.
+name: jv-scene-essence-minimal-v1-2
+description: Transform a user-supplied photo into a single standalone minimal zine poster on warm aged ivory paper (#F6F2EA). Combines atmospheric sumi-e ink-wash / watercolor paper rendering with grand wide-spaced serif headline typography (e.g. 'MIST & STILLNESS'). Extracts 1-3 core scene elements, floats them in soft desaturated ink-wash layers with 75%+ negative space, and adds one subtle color anchor. Single artwork output.
 ---
 
-# 摄影极简精粹 · Scene Essence Minimal v1.1
+# 摄影极简精粹 · Scene Essence Minimal v1.2
 
-Turn a user-supplied photo into a single standalone poetic paper-poster artwork using the **gc-minimal-zine-poster-v0-1** prompt compiler architecture and **scene-distillation-zine-v1-3** source distillation methodology.
+将用户提供的照片转化为**一张单独的日韩极简水墨纸刊海报**。
 
-Core Philosophy: **Extract 1–3 core geometric shapes and spatial structures from complex reality, reduce them to minimal flat graphic forms or fine structural lines, float them on warm paper negative space with a single vivid color anchor, and present as a single standalone artwork.**
+核心信条：**以水墨烟云与纸纹为质感，以大字距衬线体为诗意，保留场景精神骨架，留白七成，安宁自现。**
 
-## Mode Policy
+Return the generated image plus one brief creative rationale by default.
 
-Use **Standard Mode** for all generation. Use the Standard Mode Prompt Compiler to convert the distilled visual elements from the photo into a compact, 4-paragraph, high-fidelity prompt. Single image output only (never a diptych, side-by-side, or combined with the original photo).
+---
+
+## 核心视觉逻辑与质感规范
+
+1. **主标题排版（Typography）**：
+   - 使用**顶部或中部的优雅大字号衬线体（Serif）**，如 `MIST & STILLNESS`、`SILENCE & WATER`
+   - 大字距（Wide-spaced）、暗炭灰色印刷质感，营造高级杂志封面诗意感。
+
+2. **表现手法（Rendering & Texture）**：
+   - 拒绝生硬的矢量几何色块（Vector Clipart）
+   - 采用**传统东方水墨晕染（Sumi-e Ink Wash）、湿画法水彩与孔版印刷（Risograph）纸纹**
+   - 远山呈软渐变烟云，树木呈自然水墨晕渍，水面带濡湿倒影。
+
+3. **单色彩锚点（Accent Color）**：
+   - 水墨淡彩或高饱和度纸墨点缀（如水禽身上的极小宝蓝/朱红墨点），自然融于画面。
+
+4. **画面留白**：70%~85% 暖象牙色/米色吸水纸面留白。
 
 ---
 
