@@ -1,11 +1,4 @@
 ---
-name: jv-torn-world-portal-v1-1
-description: Transform a user-supplied photo into a vertical 3:5 Reality Tear Portal zine poster inheriting the full Gathered Scenes Zine workflow, where a physical hand-torn paper rupture derived from scene geometry reveals a richly detailed hand-drawn parallel world (Parallel Twin, Fantasy Extension, or Hidden World Reveal) behind or beneath truthful photography, allowing core subjects to cross the tear boundary into an atmospheric hand-drawn realm with integrated micro-text and chromatic structure. Use when the user wants a surreal world-breaking tactile poster where reality is physically torn open to expose an illustrated interior world.
----
-
-# 现实撕裂传送门 · Reality Tear Portal v1.1
-
-将用户提供的照片转化为一张**现实撕裂、露出手绘平行世界**的极简艺术纸刊海报。继承【拾景纸刊 · Gathered Scenes Zine v1.3】的完整架构与提示词编译器，并针对"现实撕裂传送门"进行核心玩法升级。
 
 核心信条：**真景为锚、现实撕裂、另界显影、跨界共生、纸面会呼吸。**
 
